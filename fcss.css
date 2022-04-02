@@ -1,0 +1,43 @@
+body{
+	background-image: url(ballpage.jpg);
+	background-size: cover;
+	
+}
+.names{
+	padding-top: 150px;
+	text-align: right;
+	font-family: cursive;
+}
+.botcolor{
+	background-color: lightcoral;
+}
+img{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+h1{
+	font-size: 110px;
+	text-align: center;
+	background-repeat: no-repeat;
+	color: #16A085;
+	animation-name: anime;
+	animation-duration: 4s;
+	text-shadow:
+    	0 1px 0 #666,
+    	0 2px 0 #555,
+    	0 3px 0 #444,
+    	0 4px 0 #333,
+    	0 5px 0 #222,
+    	0 6px 0 #111,
+    	0 7px 5px #000;
+ 
+}
+@keyframes anime{
+	25% {color: #16A085;}
+	25% {color: #EC7063;}
+	25% {color: #BB8FCE;}
+	25% {color: #3498DB;}
+}
+
+
