@@ -1,0 +1,19 @@
+body{
+	background-color: #D6EAF8;
+	font-family: cursive;
+	box-shadow: 0 1px 0 #666,
+    	0 2px 0 #555,
+    	0 3px 0 #444,
+    	0 4px 0 #333,
+    	0 5px 0 #222,
+    	0 6px 0 #111,
+    	0 7px 5px #000;
+
+
+	
+}
+.head{
+	font-family: cursive;
+	font-size: 30px;
+	
+}

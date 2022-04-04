@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+      <!--external style-->  
+        <link rel="stylesheet" href="style.css">
+
+
+        <title>Main page</title> 
+           
+    </head>
+
+    <body>
+
+        <input type="text" id="colorInputText">
+        <input type="color"  id="colorInputColor">
+        <input type="button" id="colorButton" value="change background color" 
+        onclick="changecolor()" >
+
+        <!--internal scripts-->
+        <script>
+            function changecolor() {
+                let color =document.getElementById('colorInputColor').value;
+                document.body.style.backgroundColor = color;
+                document.getElementById('colorInputText').value=color;
+            }
+
+
+        </script>
+
+        <div class="container">
+            <div class="col">
+                <h3>Batting Helmet</h3>
+                <div class="caption">
+                    <p>batting helmet is a hard plastic hat worn over a player's 
+                    normal baseball cap. While the name implies that it is worn exclusively 
+                    by batters, it is actually worn by offensive players in every stage of t
+                    heir appearance on the field: while on deck, in the batter's box, and 
+                    running the bases</p>
+                    <button type="button">More..</button>
+
+                </div>
+                <img src="Img/helmet.jpg" >        
+            </div>
+
+            <div class="col">
+                <h3>Batting leg-Guards</h3> 
+                <div class="caption">
+                    <p>Pads (also called leg guards) are protective equipment used by batters in the 
+                        sport of cricket, catchers in the sports of baseball and fastpitch softball, 
+                        and by goaltenders in ice hockey, bandy and box lacrosse.</p>
+                    <button type="button">More..</button>
+
+                </div>
+                <img src="Img/batting-pads-.jpg" >       
+            </div>
+
+            <div class="col">
+                <h3>Cricket Bat</h3>
+                <div class="caption">
+                    <p>A cricket bat is a specialised piece of equipment used by batters in the sport of 
+                        cricket to hit the ball, typically consisting of a cane handle attached to a 
+                        flat-fronted willow-wood blade. It may also be used by a batter who is making ground 
+                        to avoid a run out, by holding the bat and touching the ground with it.</p>
+                    <button type="button">More..</button>
+                   
+                </div> 
+                <img src="Img/bat.png" >       
+            </div>
+
+            <div class="col">
+                <h3>Thigh guard</h3>
+                <div class="caption">
+                    <p>protective garment consisting of a pad worn over the thighs by 
+                        cricket players. type of: protective garment. clothing that is intended 
+                        to protect the wearer from injury.</p>
+                    <button type="button">More..</button>
+
+                </div>
+                <img src="Img/thigh guard.jpg" >        
+            </div>
+
+            <div class="col">
+                <h3>Batting gloves</h3>
+                <div class="caption">
+                    <p>Batting gloves are a component in bat-and-ball games sportswear. 
+                        Typically consisting of a leather palm and back made of nylon or 
+                        another synthetic fabric, the glove covers one or both hands of a batter, 
+                        providing comfort, prevention of blisters, warmth, improved grip, and 
+                        shock absorption when hitting the ball</p>
+                    <button type="button">More..</button>
+
+                </div>
+                <img src="Img/gloves.jpg" >        
+            </div>
+
+        </div>
+        <a href="index2.html" target="_blank">Visit The about page!</a>
+        
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Queries</title>
+    <link rel="stylesheet" href="page2.css">    
+  
+    <script>
+         
+        function testVariable() {
+            debugger
+            var strText = document.getElementById("fname").value;
+            var strText1 = document.getElementById("uemail").value;
+            var strText2 = document.getElementById("uprovince").value;
+            var strText3 = document.getElementById("qd").value;
+            var strText4 = document.getElementById("sub").value;
+          
+
+        
+            
+            document.getElementById("p1").innerHTML = strText;
+            document.getElementById("p2").innerHTML = strText1;
+            document.getElementById("p3").innerHTML = strText2;
+            document.getElementById("p4").innerHTML = strText3;
+            document.getElementById("p5").innerHTML = strText4;
+            
+
+
+            
+
+        }
+
+
+        function validateform(frm){
+      
+          if(frm.name1.value ==""){
+            alert("Hey! You didn't enter name")
+            return false;
+        }
+      
+    
+      else if(frm.useremail.value ==""){
+        alert("Hey! You didn't enter your email")
+         return false;
+       }
+      
+      else if(frm.favorite.value ==""){
+        alert("Hey! You didn't enter your province")
+        return false;
+      }
+      else if(frm.chsub.value == ""){
+        alert("Hey! You didn't enter your subject")
+        return false;
+      
+      }
+      else if(frm.comment.value==""){
+        alert("Hey! You didn't text")
+        return false;
+      }
+       
+    }
+    
+    </script>
+
+   
+</head>
+<body>
+    <h1>Coustomer's Query Form...</h1>
+    <form class="contac_form" action="#" >
+        <label for="fname">Full name:</label>
+        <input class="name" type="text"  name="name1" id="fname" placeholder="Full Name..."><br><br>
+        <label for="uemail">Email Address :     </label>
+        <input class="email" type="email"  name="useremail" id="uemail" placeholder="Email Address..."><br><br>
+        <label for="uprovince">Province :</label>
+        <select name="favorite" class="userprovince" id="uprovince" > 
+            
+                
+                <option value="Western Province">Western Province</option>
+                <option value="Central Province">Central Province</option>
+                <option value="Southern Province">Southern Province</option>
+                <option value="Uva Province">Uva Province</option>
+                <option value="Sabaragamuwa Province">Sabaragamuwa Province</option>
+                <option value="North Western Province">North Western Province</option>
+                <option value="North Central Province">North Central Province</option>
+                <option value="Nothern Province">Nothern Province</option>
+                
+        </select><br><br>
+        <strong>Subject: </strong><br><br>
+        <select id="sub" name="chsub" class="userchoice"> 
+            
+            <option value="product detail">Product detail</option>
+            <option value="delivery detail">Delivery</option>
+            <option value="payment method">Pyment details</option>
+
+        </select><br><br>
+        
+        
+        <label for="qd">Details</label>
+        <textarea class="msg" rows="5" cols="5" placeholder="Query details.." name="comment" id="qd" ></textarea><br><br>
+  
+        <input type="button" value="Check and Edit" id="btnSubmit" onclick="testVariable()">
+
+        <input type="button" value="view query" id="btn" onclick="validateform(this.form)"><br><br>
+        
+    
+      <fieldset>
+        <div class="udetails">
+            <h2>User Details</h2>
+          <b>Name:</b> <p id="p1"></p><br>
+          <b>Email:</b> <p id="p2"></p><br>
+          <b>Province:</b> <p id="p3"></p><br>
+          <b>Coustomer Query:</b>  <p id="p4"></p><br>
+          <b>Subject:</b> <p id="p5"><br>
+        </div>
+      </fieldset>
+           
+        
+            
+
+        
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const form =document.querySelector('.contac_form');
+        function sendMsg(e){
+            e.preventDefault();
+            const name =document.querySelector('.name');
+            const email =document.querySelector('.email');
+            const msg =document.querySelector('.msg');
+            const userprovince =document.querySelector('.userprovince');
+            const userchoice =document.querySelector('.userchoice');
+            
+            
+
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "cricketsl2022@gmail.com",
+                Password : "yzzvcpzfdzbvvout",
+                To : email.value,
+                From : 'cricketsl2022@gmail.com',
+                Subject : userchoice.value,
+                Body : msg.value,
+            }).then(
+                message => alert(message)
+            );
+        }
+        form.addEventListener('submit',sendMsg);
+        
+
+        
+    </script>
+    <button type="submit" id="btnsr" onclick="sendMsg(e)" >Send</button><br><br>
+
+    </form>
+    <a href="../Editor/mytask.html">Page Editor</a>
+</body>
+</html>

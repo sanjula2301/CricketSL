@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset = "utf-8">
+	<title> Buy Products </title> 
+
+    <link rel="stylesheet" type="text/css" href="page02.css">
+    <style type="text/css">
+        @import url("style.css")
+    </style>
+  
+	<script src="page02.js"> </script>
+	
+</head>
+
+<body>
+
+    	<section class="header">
+		<nav>
+			<div class="nav-area">
+				<ul>
+					<li><a href="../../../Sanjula Student2/main page/mainpage-1 (1).html ">Home</a></li>
+					<li><a href=" ">Buy Products</a></li>
+					<li><a href="../../../Pasindu Student3/Quiz App/Quiz.html ">Quiz </a></li>
+					<li><a href="../../../Pasindu Student3/About us/about_us.html ">About Us</a></li>
+                    <li><a href="../../../Sanjula Student2/Query form/Query Form.html">Customer Coner</a> </li>
+                    <li><a href="../../../Randeepa Student4/index.html">Thumbnail Images</a></li>
+                    <li><a href="../../../Article/pagearticle.html">Article</a> </li>
+					
+				</ul>
+			</div>
+		</nav>
+		
+	</section>
+	<div class="heading">
+		<h1>Buy Products</h1>
+	</div>
+   
+    <div class="container">
+     
+                <!--personal details scetion 01 -->				
+                <div class="details">
+
+	               <fieldset>
+		               <legend>Personal Details </legend>
+		
+		                      <label for="name">Full Name(Required):</label><br>
+		                      <input type="text" name="name" id="name"><br><br>
+		                      <label for="email">Email(Required):</label><br>
+		                      <input type="email" name="email" id="email"><br><br>
+		
+
+		
+	                </fieldset>
+					
+	
+					
+				</div>
+	
+	              
+                <div id="products">
+				
+                    
+					
+					
+                    <fieldset class="row">
+						
+                        <!--item 1-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="ball.jpg" alt="Cricket Ball">
+                            <div class="caption">
+                                <h4>Cricket Ball</h4>
+                                <div>
+                                    <span class="price">$6</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product1"><br>
+                                </div>
+                            </div>
+                            <br><br><button onclick="addCart(document.getElementById('product1').value,'Cricket Ball',6,document.getElementById('name').value,document.getElementById('email').value);" id="btn1">
+                                Add to Cart
+                            </button>
+                        </div>
+                        </div>
+						
+                        <!--item 2-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="bat.jpg" alt="Crickt Bat">
+                            <div class="caption">
+                                <h4>Cricket Bat</h4>
+                                <div>
+                                    <span class="price">$10</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product2"><br>
+                                </div>
+                            </div>
+                            <br><br><button onclick="addCart(document.getElementById('product2').value,'Cricket Bat',10,document.getElementById('name').value,document.getElementById('email').value);" id="btn2">
+                                Add to Cart
+                            </button>
+                        </div>
+                        </div>  
+						
+                        <!--item 3--> 
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="crickpads.jpg" alt="Cricket Pad">
+                            <div class="caption">
+                                <h4>Cricket Pad</h4>
+                                <div>
+                                    <span class="price">$25</span><br>
+                                Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product3"><br>
+                               
+                                </div>
+                            </div>
+                             <br><br><button onclick="addCart(document.getElementById('product3').value,'Cricket Pad ',25,document.getElementById('name').value,document.getElementById('email').value);" id="btn3">
+                                Add to Cart
+                            </button>
+                        </div>
+                        </div>
+						
+						<!--item 4--> 
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="helmet.jpg" alt="Helmet">
+                            <div class="caption">
+                                <h4>Cricket Helmet</h4>
+                                <div>
+                                  <span class="price">$35</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product4"><br>
+                                </div>
+                            </div>
+                             <br><br><button onclick="addCart(document.getElementById('product4').value,'Cricket Helmet ',35,document.getElementById('name').value,document.getElementById('email').value);" id="btn4">
+                                Add to Cart
+                            </button>
+                        </div>
+                        </div>					
+                    </fieldset>
+					
+                    
+					
+					
+                    <fieldset class="row">
+                        
+						
+                        <!--item 5-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="stumps.jpg" alt="Cricket Stumps">
+                            <div class="caption">
+                                <h4 class="item">Stumps</h4>
+                                <div>
+                                    <span class="price">$10</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product5"><br>
+                                </div>
+                            </div>
+                            <br><br><button onclick="addCart(document.getElementById('product5').value,'Stumps ',10,document.getElementById('name').value,document.getElementById('email').value);" id="btn5">
+                                Add to Cart
+								
+                            </button>
+							 
+                        </div>
+                        </div>
+						
+                        <!--item 6-->
+						<div class="space">
+                        <div class="items">
+                            <img class="image" src="shirts.jpg" alt="Shirt">
+                            <div class="caption">
+                                <h4>Cricket Shirt</h4>
+                                <div>
+                                    <span class="price"> $18</span><br>
+                                Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product6"><br>
+                                Size &nbsp; &nbsp; &nbsp; &nbsp;
+                                 <select id="clothing2" >
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">2XL</option>
+                                 </select>
+                                </div>
+                            </div>
+                            <button onclick="addCart(document.getElementById('product6').value,'Shirt ',18,document.getElementById('name').value,document.getElementById('email').value);" id="btn6">
+                                Add to Cart
+								
+                            </button>
+                        </div>
+                        </div>
+						
+                        <!--item 7-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="shoes.jpg" alt="Cricket Shoes">
+                            <div class="caption">
+                                <h4 class="item">Shoes</h4>
+                                <div>
+                                    <span class="price">$35</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product7"><br>
+                                </div>
+                            </div>
+                              <br><br><button onclick="addCart(document.getElementById('product7').value,'Shoes ',35,document.getElementById('name').value,document.getElementById('email').value);" id="btn7">
+                                Add to Cart
+								
+                            </button>
+                        </div>
+                        </div>
+						
+						<!--item 8-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="cap.jpg" alt="Cap">
+                            <div class="caption">
+                                <h4 class="item">Cap</h4>
+                                <div>
+                                    <span class="price">$4</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product8"><br>
+                                </div>
+                            </div>
+                              <br><br><button onclick="addCart(document.getElementById('product8').value,'Cap ',4,document.getElementById('name').value,document.getElementById('email').value);" id="btn8">
+                                Add to Cart
+								
+                            </button>
+                        </div>
+                        </div>
+						
+					</fieldset>
+						
+						
+						
+						
+                    <fieldset class="row">
+                        
+						
+                        <!--item 9-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="gloves.jpg" alt="Gloves">
+                            <div class="caption">
+                                <h4 class="item">Cricket Gloves</h4>
+                                <div>
+                                    <span class="price">$12</span><br>
+                                Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product9"><br>
+                                </div>
+                            </div>
+                            <br><br><button onclick="addCart(document.getElementById('product9').value,'Gloves',12,document.getElementById('name').value,document.getElementById('email').value);" id="btn9">
+                                Add to Cart
+                            </button>
+                        </div>
+                        </div>
+						
+                        <!--item 10-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="sunglass.jpg" alt="Sun Glass">
+                            <div class="caption">
+                                <h4 class="item">Sun Glass</h4>
+                                <div>
+                                    <span class="price">$5</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product10"><br>
+                                </div>
+                            </div>
+                            <br><br><button onclick="addCart(document.getElementById('product10').value,'Sun Glass ',5,document.getElementById('name').value,document.getElementById('email').value);" id="btn10">
+                                Add to Cart
+								
+                            </button>
+                        </div>
+						</div>
+
+                        <!--item 11-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="thigh.jpg" alt="Thigh Guard">
+                            <div class="caption">
+                                <h4 class="item">Thigh Guard</h4>
+                                <div>
+                                    <span class="price">$8</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product11"><br>
+                                </div>
+                            </div>
+                            <br><br><button onclick="addCart(document.getElementById('product11').value,'Thigh Guard  ',8,document.getElementById('name').value,document.getElementById('email').value);" id="btn11">
+                                Add to Cart
+								
+                            </button>
+                        </div>
+						</div>
+
+						<!--item 12-->
+						
+                        <div class="space">
+                        <div class="items">
+                            <img class="image" src="armguard.jpg" alt="Arm Guard">
+                            <div class="caption">
+                                <h4 class="item">Arm Guard</h4>
+                                <div>
+                                    <span class="price">$8</span><br>
+                                    Quantity &nbsp;<input type="number" value="0" min="0" max="10" class="quantity" id="product12"><br>
+                                </div>
+                            </div>
+                              <br><br><button onclick="addCart(document.getElementById('product12').value,'Arm Guard ',8,document.getElementById('name').value,document.getElementById('email').value);" id="btn12">
+                                Add to Cart
+								
+                            </button>
+                        </div>
+                        </div>
+                    </fieldset>
+	   
+                    <fieldset>
+	                   <button onclick="readCart()" id ="myBtn">Order Here</button>       
+		                      <!--<input type="submit" name="button" value="Place Order" >-->
+                    </fieldset>
+                    
+		<!--</form>-->			
+		
+		<div id ='demo1'>
+
+</div>
+<div>
+<footer>
+    <a href="../../Editor/shtml.html"> Editor</a>: Lithira Renuja Hettiarachchi
+</footer>
+</div>	
+ 
+</div>
+</div>
+</body>
+
+</html>

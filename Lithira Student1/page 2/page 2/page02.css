@@ -1,0 +1,212 @@
+/*styling the body of the web page  */
+body{  
+
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #033E61;
+    height:auto;
+}
+/*styling the header 1 on the web page*/    
+h1{
+    text-align:center;
+    color:white;
+}
+/*styling the labels on the web page*/    
+label{
+    float: left;
+    width: 25%;
+    margin-right: 0.5em;
+    padding-top: 0.2em;
+    text-align: right;
+    font-weight:bold;
+}
+/*styling the fieldsets on the web page*/      
+fieldset{         
+    font: 80%/1 sans-serif;
+    padding: 2em;
+                
+}
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*styling the class on top of the web page*/
+.container{
+    width:100%;
+    height:1000px;
+    padding:10px;
+    margin-top: 20px; 
+}
+/*styling the class for the main heading of the web page*/  
+.intro{
+    text-align: center;
+    margin:5px 10pt 0pt 60pt;   
+}
+/*styling the horizontal line under the heading*/   
+hr{
+    margin: 20px -50px;
+}
+/*styling for personal details*/
+.details{
+    float: left;
+    width: 35%;
+    margin-left: 20px;
+    margin-top: 28px;
+    padding-right:10px;
+}
+/*styling for products*/
+#products{
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: -10px;
+    height:750px;
+    width: 60%;
+    
+}
+
+/*styling the place order button*/
+#myBtn{ 
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*styling for input field elements*/
+.text{
+    width: 95%;
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    background: rgba(255,255,255,.2);
+}
+/*styling the text area*/
+textarea{
+    padding-left: 15px;
+    padding-top:10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    background: rgba(255,255,255,.2);
+    width:95%
+}
+
+/*styling to keep all products in a line*/
+.row{
+    float: none;
+    width:650px;
+    height: auto;
+    margin: 10px;
+    margin-top:10px;
+    padding:25px;
+    display:flex;
+    border:none;
+}
+.space{
+    padding-right: 150px;
+}
+/*styling for items div tags*/
+.items
+{
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: right;
+    background-color: rgba(151, 151, 151,0.6);
+    width: 200px;
+
+}
+/*styling the product images*/
+.image{
+    width:200px;
+    height:200px;
+    display:flex;   
+}
+
+.image:hover{
+    transform: scale(1.25);
+    box-shadow: 0 0 20px rgb(14, 14, 78);
+}
+
+/*styling for product details*/
+.caption{
+    padding: 5px 9px 0px 9px;
+    text-align: center;
+}
+
+.description{
+    font-size:14px;
+}
+/*styling product name under images of products*/
+h4{
+    font-weight: bolder;
+}
+/*styling for input type number*/
+.quantity {
+    color:black;
+    margin-top: 5px;
+    width:37px;
+}
+/*styling for size selection*/
+select, option{
+   color:black;
+   margin-top: 5px;
+}
+/*styling for Add to Cart button*/
+.items button {
+border: none;
+outline: 0;
+padding: 6px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+margin-left:0px;
+margin-bottom:0px;
+border-radius: 0px;
+}
+
+.items button:hover{
+opacity: 0.7;
+}
+
+/*============================================================================================*/
+/*Styles related to the navigation bar and body of the web page*/
+
+
+}
+footer{
+    text-align:center;
+    padding-left:60%;
+    color:white;
+}
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+legend{
+    font-size:20px;
+}
+.buttons{
+    border:none;
+}
+

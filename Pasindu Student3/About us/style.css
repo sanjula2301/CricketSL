@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgb(6, 6, 241);
+    font-family: 'poppins', sans-serif;
+}
+body, html{
+    
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+    width: 100%;
+    height: 100%;
+    background-color: #033E61;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.mem_area{
+    width: 360px;
+    height: 400px;
+    padding: 24px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items:center;
+    transition: .6s ease-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0,0.5);
+}
+
+
+.mem_area:hover{
+    transform: translateY(15px);
+}
+
+.mem_area:hover::before{
+    opacity: 1;
+}
+
+.mem_area:hover .mem_details{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.mem_area::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgb(0, 0, 0),transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.mem_area img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.mem_area .mem_details{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+}
+a:link, a:visited {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: pink;
+}
+
+
+
