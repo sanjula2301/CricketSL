@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(8, 56, 95);
+}
+img{
+	float: right;
+	padding-right: 100px;
+	height: 300px;
+}
+p{
+	font-size: 20px;
+    padding: 10px;
+}
+ul{
+    font-size: 20px;
+}
+legend{
+    font-size: 30px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.histo{
+    background-color: rgb(59, 98, 230);
+    color: white;
+}
+.crivssl{
+    background-color: rgb(29, 166, 230);
+    color: white;
+}
+.clothing{
+    background-color: rgb(21, 228, 228);
+    color: white;
+}
+.editor{
+    color: white;
+}
+a:link, a:visited {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: pink;
+}
